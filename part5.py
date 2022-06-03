@@ -24,7 +24,7 @@ not a month
 
 #start writing your code below
 
-month = (input("Enter a month: "))
+month = str(input("Enter a month: "))
 
 '''
 if month == "January" or "March" or "May" or "July" or "August" or "October" or "December":
@@ -37,11 +37,11 @@ else:
   print("Not a month")
 '''
 
-if month == "31" and "5":
-  print("31")
-elif month == "30":
-  print("30")
-elif month == "Feb":
+if month == "February":
   print("28 or 29")
+elif month in ["April", "June", "September", "November"]:
+  print("30")
+elif month in ["January", "March", "May", "July", "August", "October", "December"]:
+  print("31")
 else:
-  print("idek broo")
+  print("Not a month")

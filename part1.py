@@ -23,11 +23,13 @@ smallest = number
 
 number = int(input("Enter another number: "))
 
-number = int(input("Enter another number: "))
+number3 = int(input("Enter another number: "))
 
+lis = []
 
+lis.append(smallest)
+lis.append(number)
+lis.append(number3)
 
-if number < smallest:
-  smallest = number
-  
+smallest = (min(lis))
 print("The smallest number is ", smallest)
